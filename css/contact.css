@@ -1,0 +1,101 @@
+
+#contactus fieldset
+{
+   width:472px;
+   padding:4px;
+   border:1px solid #ccc;
+-moz-border-radius: 10px;
+-webkit-border-radius: 10px;
+-khtml-border-radius: 10px;
+border-radius: 10px;   
+}
+
+#contactus legend
+{
+   font-family : Arial, sans-serif;
+   font-size: 1.3em;
+   font-weight:bold;
+   color:#0033cc;
+}
+
+#contactus label
+{
+   font-family : Arial, sans-serif;
+   font-size:1.0em;
+   font-weight: bold;
+}
+
+#contactus input[type="text"],textarea
+{
+  font-family : Arial, Verdana, sans-serif;
+  font-size: 0.8em;
+  line-height:140%;
+  color : #000; 
+  padding : 3px; 
+  border : 1px solid #999;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+}
+
+#contactus input[type="text"]
+{
+  height:18px;
+  width:280px;
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   border-radius: 5px;   
+  
+}
+
+#contactus input[type="submit"]
+{
+   width:100px;
+   height:30px;
+   padding-left:0px;
+   
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+   border-radius: 5px;   
+}
+
+#contactus textarea
+{
+  height:120px;
+  width:310px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+   border-radius: 8px;  
+}
+
+#contactus input[type="text"]:focus,textarea:focus
+{
+  color : #009;
+  border : 1px solid #990000;
+  background-color : #ffff99;
+  font-weight:bold;
+}
+
+#contactus .container
+{
+   margin-top:8px;
+   margin-bottom: 10px;
+}
+
+#contactus .error
+{
+   font-family: Verdana, Arial, sans-serif; 
+   font-size: 0.7em;
+   color: #900;
+   background-color : #ffff00;
+}
+
+#contactus .short_explanation
+{
+   font-family : Arial, sans-serif;
+   font-size: 0.9em;
+   color:#ff0000;   
+}
