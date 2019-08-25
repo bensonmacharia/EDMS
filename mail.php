@@ -7,11 +7,11 @@ $mail = new PHPMailer();
 $mail->SMTPAuth = true;
 $mail->Host = "smtp.gmail.com"; // SMTP server
 $mail->SMTPSecure = "ssl";
-$mail->Username = "muchokibenson12@gmail.com"; //account with which you want to send mail. Or use this account. i dont care :-P
-$mail->Password = "28624259"; //this account's password.
+$mail->Username = "XXXXXX"; //account with which you want to send mail. Or use this account. i dont care :-P
+$mail->Password = "XXXXXX"; //this account's password.
 $mail->Port = "465";
 $mail->IsSMTP();  // telling the class to use SMTP
-$rec1="muchokibenson12@gmail.com"; //receiver. email addresses to which u want to send the mail.
+$rec1="XXXXXX"; //receiver. email addresses to which u want to send the mail.
 $mail->AddAddress($rec1);
 $mail->Subject  = "Eventbook";
 $mail->Body     = "Hello hi, testing";
