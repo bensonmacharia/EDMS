@@ -1,10 +1,14 @@
 <?php
-include("session.php");
-include("connection.php");
+ini_set('display_errors', '1');
+ini_set('display_startup_errors', '1');
+error_reporting(E_ALL);
+
+include "session.php";
+include "connection.php";
 //include ("session_expire.php");
-if(!(isset($_SESSION['login_user'])&&$_SESSION['login_user']!="")){
+if (!(isset($_SESSION['login_user']) && $_SESSION['login_user'] != "")) {
     header("Location:index.php");
-	}
+}
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -13,7 +17,7 @@ if(!(isset($_SESSION['login_user'])&&$_SESSION['login_user']!="")){
 <title>| EDMS</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <!--[if IE ]> <link href="css/ie.css" rel="stylesheet" type="text/css" /> <![endif]-->
-<script type="text/javascript"> 
+<script type="text/javascript">
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
 mytime=setTimeout('display_ct()',refresh)
@@ -33,19 +37,16 @@ tt=display_c();
   <div id="header">
     <div id="logo"><img src="images/banner-lab.png"><b id="welcome">Welcome: <a href="profile.php"><?php echo $login_session; ?></a></b></div>
     <div id="profile"><b id="logout"><a href="logout.php">Log Out</a></b></div>
-        
+    ï¿½ ï¿½ï¿½
     <header id="title"> &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp; <span id='ct' style=" float: left;"></span>
       <div style="width: 783px; height: 52px; background: url(images/bak_top.jpg) no-repeat;">
-       <?php 
-		if(($type=='Administrator')|| ($type=='Technician'))
-      {
-	   include 'topmenu.php'; 
-      }
-	  else
-	  {
-       include 'topmenu1.php';
-      }
-      ?>
+       <?php
+if (($type == 'Administrator') || ($type == 'Technician')) {
+    include 'topmenu.php';
+} else {
+    include 'topmenu1.php';
+}
+?>
       </div>
     </header>
   </div>
@@ -53,16 +54,13 @@ tt=display_c();
 <div id="container">
   <div id="leftMain"> <a href="#"><img src="images/erms1.png" alt="ERMS" border="0" /></a>
     <div id="navbar">
-       <?php 
-	  if(($type=='Administrator')|| ($type=='Technician'))
-      {
-	   include 'sidemenu.php'; 
-      }
-	  else
-	  {
-       include 'sidemenu1.php';
-      }
-      ?>
+       <?php
+if (($type == 'Administrator') || ($type == 'Technician')) {
+    include 'sidemenu.php';
+} else {
+    include 'sidemenu1.php';
+}
+?>
     </div>
     <div id="navbarAlt">
       <ul>
@@ -82,13 +80,10 @@ tt=display_c();
             <br/>
             <b style="color:#0033cc">Notifications:</b><br/>
             <?php
-	 if($type=='Administrator') 
-      {
-	   include 'notifications.php'; 
-      }
-	  else
-	  {
-       include 'notifications1.php';
+if ($type == 'Administrator') {
+    include 'notifications.php';
+} else {
+    include 'notifications1.php';
 }
 ?>
           </td>

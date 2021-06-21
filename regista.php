@@ -7,7 +7,7 @@
 <!--[if IE ]> <link href="css/ie.css" rel="stylesheet" type="text/css" /> <![endif]-->
 <SCRIPT type="text/javascript">
 
-function regvalidate() 
+function regvalidate()
 {
 if(document.registrationform.fname.value=="")
  {
@@ -15,31 +15,31 @@ if(document.registrationform.fname.value=="")
   registrationform.fname.focus();
   return(false);
  }
- 
-  
-re = /^[a-zA-Z\-\' ]*$/;  
-if(!re.test(registrationform.fname.value)) 
- { 
+
+
+re = /^[a-zA-Z\-\' ]*$/;
+if(!re.test(registrationform.fname.value))
+ {
   alert("First name must be characters only");
   registrationform.fname.focus();
    return(false);
   }
- 
+
 if(document.registrationform.sname.value=="")
  {
   alert( "Second name should not be empty");
   registrationform.sname.focus();
   return(false);
  }
- 
-re = /^[a-zA-Z\-\' ]*$/;  
-if(!re.test(registrationform.sname.value)) 
- { 
+
+re = /^[a-zA-Z\-\' ]*$/;
+if(!re.test(registrationform.sname.value))
+ {
   alert("Second name must be characters only");
   registrationform.sname.focus();
    return(false);
   }
- 
+
 
 
 if(document.registrationform.email.value=="")
@@ -48,18 +48,18 @@ if(document.registrationform.email.value=="")
   registrationform.email.focus();
   return(false);
   }
-  
+
   var re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  
- if(!re.test(registrationform.email.value)) 
- { 
+
+ if(!re.test(registrationform.email.value))
+ {
   alert("Invalid email adress format");
   registrationform.email.focus();
    return(false);
-  }  
-  
- 
-  
+  }
+
+
+
 if(document.registrationform.position.value=="")
   {
   alert ("Position required");
@@ -74,13 +74,13 @@ if(document.registrationform.password.value=="")
   registrationform.password.focus();
   return(false);
   }
-  
-  if(document.registrationform.password.value.length < 6) { 
+
+  if(document.registrationform.password.value.length < 6) {
   alert("Password must contain at least six characters!");
   registrationform.password.focus();
   return(false);
    }
-   
+
 if(document.registrationform.confam.value=="")
    {
  alert ("Password confirmation required");
@@ -95,15 +95,15 @@ if((document.registrationform.password.value) != (document.registrationform.conf
   registrationform.confam.focus();
   return(false);
   }
-   
-   
+
+
 else
    {
    return(true);
    }
 }
 </SCRIPT>
-<script type="text/javascript"> 
+<script type="text/javascript">
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
 mytime=setTimeout('display_ct()',refresh)
@@ -160,7 +160,7 @@ input[type=text]:focus,input[type=password]:focus
                   </tbody>
                 </table></td>
               <td width="100px;" style="font-size: 10px;"></td>
-              <td style="font-size: 10px; font-weight: bold;"><a href="http://localhost/edms/help.php" style="text-decoration: none; font-size:10px; background: #01D928; color: #FFF; border: 0px; padding: 3px 7px;">HELP</a>&nbsp; <a href="http://localhost/edms/new-users.php" style="text-decoration: none; font-size:10px; background: #0033cc; color: #FFF; border: 0px; padding: 3px 7px;">NEW USER</a> </td>
+              <td style="font-size: 10px; font-weight: bold;"><a href="http://localhost/EDMS/help.php" style="text-decoration: none; font-size:10px; background: #01D928; color: #FFF; border: 0px; padding: 3px 7px;">HELP</a>&nbsp; <a href="http://localhost/edms/new-users.php" style="text-decoration: none; font-size:10px; background: #0033cc; color: #FFF; border: 0px; padding: 3px 7px;">NEW USER</a> </td>
             </tr>
           </tbody>
         </table>
@@ -171,7 +171,7 @@ input[type=text]:focus,input[type=password]:focus
 </div>
 </div>
 <div id="container">
-  <div id="leftMain"> <a href="index.html"><img src="images/erms1.png" alt="ERMS" border="0" /></a>
+  <div id="leftMain"> <a href="index.html"><img src="images/erms1.png" alt="EDMS" border="0" /></a>
     <div id="navbar">
       <ul>
         <li><a href="index.html">Home</a></li>

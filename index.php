@@ -1,6 +1,6 @@
 <?php
-include('login.php'); // Includes Login Script
-include("connection.php");
+//include 'login.php'; // Includes Login Script
+include "connection.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -8,7 +8,7 @@ include("connection.php");
 <title>| EDMS</title>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 <!--[if IE ]> <link href="css/ie.css" rel="stylesheet" type="text/css" /> <![endif]-->
-<script type="text/javascript"> 
+<script type="text/javascript">
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
 mytime=setTimeout('display_ct()',refresh)
@@ -39,10 +39,10 @@ tt=display_c();
 				    </tbody></table>
 				     </td>
 					 <td width="100px;" style="font-size: 10px;">
-					 
+
 				       </td>
-					<td style="font-size: 10px; font-weight: bold;"><a href="http://localhost/edms/contact.php" style="text-decoration: none; font-size:10px; background: #01D928; color: #FFF; border: 0px; padding: 3px 7px;">HELP</a>&nbsp;
-					 <a href="http://localhost/edms/new-users.php" style="text-decoration: none; font-size:10px; background: #0033cc; color: #FFF; border: 0px; padding: 3px 7px;">NEW USER</a>												                			</td>
+					<td style="font-size: 10px; font-weight: bold;"><a href="http://localhost/EDMS/contact.php" style="text-decoration: none; font-size:10px; background: #01D928; color: #FFF; border: 0px; padding: 3px 7px;">HELP</a>&nbsp;
+					 <a href="http://localhost/EDMS/new-users.php" style="text-decoration: none; font-size:10px; background: #0033cc; color: #FFF; border: 0px; padding: 3px 7px;">NEW USER</a>												                			</td>
                 		</tr>
                 	</tbody>
 					</table>
@@ -52,7 +52,7 @@ tt=display_c();
    </header>
 </div></div>
 <div id="container">
-<div id="leftMain"> 
+<div id="leftMain">
 <a href="#"><img src="images/erms1.png" alt="ERMS" border="0" /></a>
 <div id="navbar">
 <!--Quick Links-->
@@ -73,7 +73,7 @@ tt=display_c();
 <div id="main" style="border:none">
 <div id="login">
 <img src="images/login.png" align="left">&nbsp;&nbsp;&nbsp;<h2>User Login</h2><br/>
-<form action="" name="login" method="post" onSubmit="return(regvalidate())">
+<form name = "login" method="POST" action="login.php" onSubmit="return(regvalidate())">
 <label>Your Email:*&nbsp;</label>
 <input id="email" name="email" placeholder="email" type="text">
 <br/><br/>
@@ -84,8 +84,7 @@ tt=display_c();
 <p align="left">Remember Me <input type="checkbox" name="rememberme"></p>
 <p align="left"><a href="http://www.edms.host22.com/forgotpass.php">Forgot Password?</a></p>
 <p align="left">Need a Username and Password?</p>
-<!--<p align="left"><a href="mailto:muchokibenson12@gmail.com">Email us</a></p>-->
-<p align="left"><a href="regista.php">Register</a> or <a href="mailto:muchokibenson12@gmail.com">Email us</a></p>
+<p align="left"><a href="regista.php">Register</a> or <a href="mailto:admin@admin.com">Email us</a></p>
 <!--<p style="color:red">*Note: Check your email for notification on sign up.</p>-->
 </td>
 </form>
